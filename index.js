@@ -24,7 +24,6 @@ app.use(limiter);
 app.use("/api/",userRouter);
 app.use("/api/", transactionRoter);
 
-// route not found
 app.use((req,res,next) => {
     return res.status(404).json({ message: "Route not found" });
 })
