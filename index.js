@@ -1,7 +1,6 @@
 require("dotenv").config(); 
 const express = require("express");
 const cors = require("cors");
-const bcrypt = require("bcrypt");
 const rateLimit = require("express-rate-limit");
 const userRouter = require("./routes/user.route");
 const transactionRoter = require("./routes/transaction.route");
