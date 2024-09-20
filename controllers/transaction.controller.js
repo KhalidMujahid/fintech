@@ -1,7 +1,7 @@
 const Transaction = require("../models/Transaction");
 const generateID = require("../utils/generateID");
 
-const createTransaction = async (req, res, next) => async (req, res) => {
+const createTransaction = async (req, res) => {
   const {
     amount,
     recipient_account_number,
